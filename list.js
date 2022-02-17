@@ -1,11 +1,13 @@
 const url = "https://musicalbums-9ce5.restdb.io/rest/albumscolumn ";
 
+//using an apikey to acces all the data
 const options = {
   headers: {
     "x-apikey": "620d3abb34fd621565858697",
   },
 };
 
+//fetching data from url from restdb.io using apikey
 fetch(url, options)
   .then(function (res) {
     return res.json();
@@ -14,6 +16,7 @@ fetch(url, options)
     handleData(data);
   });
 
+//making a function using data, so that each album shows its content
 function handleData(albums) {
   albums.forEach((album) => {
     console.log(album);
