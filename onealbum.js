@@ -24,7 +24,6 @@ function showAlbum(album) {
   document.querySelector("h3").textContent = album.year;
   document.querySelector("h4").textContent = album.genre;
   document.querySelector("p").textContent = album.description;
-  document.querySelector("ol").textContent = album.tracklist;
-  document.querySelector(".artist_image").src = album.artist_image;
+
   document.querySelector(".album_image").src = album.album_image;
 }
