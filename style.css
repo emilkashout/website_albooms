@@ -20,23 +20,34 @@ body {
         gap: 2rem;
         margin-left: 5%;
         margin-right: 3%;
-   
-    
+       
 }
 
 img {
     max-width: 100%;
 }
 
+.describe {
+    margin-bottom: 10em;
+}
+
 header h1 {
-   font-size: 4.5rem;
+   font-size: 5rem;
    display: flex;
    justify-content: center;
    text-align: center;
 color: #CA2C42;
 font-family: utopia-std-headline, serif;
 margin-top: -2em;
-margin-bottom: 2em;
+
+}
+
+p {
+    color: whitesmoke; 
+    font-family: Arial, Helvetica, sans-serif;
+  
+    justify-content: center;
+    text-align: center;
 }
 
 #logo {
@@ -56,8 +67,17 @@ a {
    font-size: 1.3rem;
 }
 
-
+h1 {
+    font-size: 1.7rem;
+}
 
 a {
     font-size: 1.3rem;
+
+}
+
+
+h3,
+h4 {
+    font-size: 1rem;
 }
