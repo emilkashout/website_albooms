@@ -4,21 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jsh7spd.css">
     <title>Albooms</title>
   </head>
   <body>
-    <main>
+    <header>
+      <img id="logo" src="images/logo.png" alt="logo">
+      <div class="describe">
+      <h1>music albooms</h1>
+      <p>For all the crazy music freaks, as well as for newbees who want to discover new genres!</p>
+    </div>
+    </header>
+    <main class="albumlist">
+    
       <template class="onealbum">
-        <section>
+        <artcile class=album>
           <img src="" alt="" class="album_image" />
           <h1>title</h1>
           <h2>artist</h2>
           <h3>year</h3>
           <h4>genre</h4>
           <a class="more" href="albumview.html">More</a>
-        </section>
+        </article>
       </template>
     </main>
+    <footer>
+      <p>Music Albooms  ®2022</p>
+    </footer>
     <script src="list.js"></script>
   </body>
 </html>
