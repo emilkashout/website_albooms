@@ -17,27 +17,14 @@ function showAlbum(album) {
   console.log(album);
 }
 
-
-function handleData(albums) {
-  albums.forEach((album) => {
-    console.log(album);
-    //grab the template
-    const template = document.querySelector("#view").content;
-    //clone it
-    const copy = template.cloneNode(true);
-    //change content
- 
-    copy.querySelector("img").src = album.album_image;
-    copy.querySelector("h1").textContent = album.title;
-    copy.querySelector("h2").textContent = album.artist;
-    copy.querySelector("h3").textContent = album.year;
-    copy.querySelector("h4").textContent = album.genre;
-    copy.querySelector("p").textContent = album.description;
-    copy.querySelector("ol").textContent = album.tracklist;
-    copy.querySelector("img").textContent = album.artist_image;
-    //grab parent
-    const parent = document.querySelector("main");
-    //append it
-    parent.appendChild(copy);
-  });
+function showAlbum(album) {
+  console.log(album);
+  document.querySelector("h1").textContent = album.title;
+  document.querySelector("h2").textContent = album.artist;
+  document.querySelector("h3").textContent = album.year;
+  document.querySelector("h4").textContent = album.genre;
+  document.querySelector("p").textContent = album.description;
+  document.querySelector("ol").textContent = album.tracklist;
+  document.querySelector(".artist_image").src = album.artist_image;
+  document.querySelector(".album_image").src = album.album_image;
 }
