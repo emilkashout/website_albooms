@@ -88,3 +88,64 @@ footer p {
     margin-bottom: -2em;
     color: rgb(95, 95, 95);
 }
+
+
+.grid img {
+max-width: 500px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "imgleft . rest-right";
+    gap: 2rem;
+    margin-left: 5%;
+    margin-right: 7%;
+    margin-top: -6em;
+}
+
+.grid h1 {
+    font-size:4rem;
+ 
+}
+
+.grid h2 {
+    font-size: 3rem;
+  
+}
+
+.grid h3, h4 {
+    font-size: 1rem;
+    margin-top: 1em;
+}
+
+
+.grid p {
+    text-align: left;
+    margin-top: 3em;
+}
+
+@media only screen and (max-width: 900px) {
+    .grid {
+        display: block;
+    }
+
+
+.grid h1 {
+    font-size:3rem;
+ 
+}
+
+.grid h2 {
+    font-size: 2rem;
+  
+}
+
+.grid h3, h4 {
+    font-size: 1rem;
+    margin-top: 1em;
+}
+
+}
